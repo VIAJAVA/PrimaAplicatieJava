@@ -1,5 +1,6 @@
 package rojava.ctrln;
 
+
 public class Main {
 
     /**
@@ -10,7 +11,15 @@ public class Main {
      */
 
     public static void main(String[] args) {
+if (args.length!= 4){
+    System.out.println ("USAGE: java rojava.ctrln.Main 1 2 3 4");
+    return;
+}
+    if (args[0].equals("1")){
+        System.out.println ("Ar trebui sa am un singur mesaj!");
 
+        }
 	    System.out.println("Invat limbajul Java si despre masina virtuala!");
+        rojava.misc.Main.main(args);
     }
 }
